@@ -1,6 +1,5 @@
 package com.example.testApplication.dto;
 
-import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import lombok.Data;
 
