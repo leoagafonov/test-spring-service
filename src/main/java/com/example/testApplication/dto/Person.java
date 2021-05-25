@@ -1,5 +1,7 @@
 package com.example.testApplication.dto;
 
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -27,4 +29,8 @@ public class Person {
     @Column(name = "Age")
     private Integer age;
 
+    @Override
+    public String toString() {
+        return new GsonBuilder().setPrettyPrinting().create().toJson(this);
+    }
 }

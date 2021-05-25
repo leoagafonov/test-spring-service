@@ -24,7 +24,7 @@ public class PersonController {
         return savedPerson.toString();
     }
 
-    @RequestMapping(value = "/personGetAll", method = RequestMethod.GET)
+    @RequestMapping(value = "/getAllPersons", method = RequestMethod.GET)
     List<Person> getAllPersons(){
         return personService.findAll();
     }
